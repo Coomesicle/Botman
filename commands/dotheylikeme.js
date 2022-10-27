@@ -7,8 +7,9 @@ module.exports = {
 		.setDescription("Find out if everyone doesn't like you"),
 
 	async execute(interaction) {
-		interaction.reply({content: "Everyone hates you and lives in your walls", ephemeral: true});
-		interaction.editReply('Rip of your skin do it now do it now');
+		interaction.reply({content: "Everyone hates you and lives in your walls", ephemeral: true})
+		await wait(3000)
+		interaction.editReply('Rip of your skin do it now do it now')
 		return;
 	},
 };

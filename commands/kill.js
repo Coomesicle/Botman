@@ -12,8 +12,6 @@ module.exports = {
 		const user = interaction.options.getUser('target');
         if(user.username=='CrizBot') return interaction.reply('Crizbot doesnt die u noob! L+Radio');
 		interaction.reply(`Killing: ${user.username}`);
-        await wait(100)
-        interaction.followUp({content:'They Was not the Imposter!'});
         return;
     },
     
